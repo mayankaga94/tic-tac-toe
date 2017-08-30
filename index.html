@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset = "utf-8">
+  <meta name = "viewport" content = "width=device-width,initial-scale=1.0">
+  <link type = "text/css" rel = "stylesheet" href = "style.css">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <title>Tic-Tac-Toe</title>
+</head>
+<body>
+<header class = "hide">
+  <h1>Tic Tac Toe</h1>
+</header>
+  <div class = "bar" id = "game-type">
+    <h1 class = "sub-heading" id = "sub-heading-type"></h1>
+    <div class = "sub-bar" id = "sub-bar-type">
+      <button class = "btn btn-choice type" id = "human" onclick = "clickFirstButton('human')"></button>
+      <span id = "or"></span>
+      <button class = "btn btn-choice type" id = "robot" onclick = "clickFirstButton('robot')"></button>
+    </div>
+  </div>
+  <div class = "bar hide" id = "player-choice">
+      <h1 class = "sub-heading" id = "sub-heading-choice"></h1>
+      <div class = "sub-bar">
+        <button class = "btn btn-choice player" id = "X"></button>
+        <button class = "btn btn-choice player" id = "O"></button>
+      </div>
+  </div>
+  <div class = "container hide">
+    <div class = "box br">
+      <h1 class = "box-heading" id = "0"></h1>
+    </div>
+    <div class = "box br">
+      <h1 class = "box-heading" id = "1"></h1>
+    </div>
+    <div class = "box b">
+      <h1 class = "box-heading" id = "2"></h1>
+    </div>
+    <div class = "box br">
+      <h1 class = "box-heading" id = "3"></h1>
+    </div>
+    <div class = "box br">
+      <h1 class = "box-heading" id = "4"></h1>
+    </div>
+    <div class = "box b">
+      <h1 class = "box-heading" id = "5"></h1>
+    </div>
+    <div class = "box r">
+      <h1 class = "box-heading" id = "6"></h1>
+    </div>
+    <div class = "box r">
+      <h1 class = "box-heading" id = "7"></h1>
+    </div>
+    <div class = "box">
+      <h1 class = "box-heading" id = "8"></h1>
+    </div>
+  </div>
+  <h1 class = "hide" id = "result"></h1>
+  <button class = "btn hide" id = "reset" onclick = "resetGame()">Reset</button>
+  <script src = "script.js"></script>
+</body>
+</html>

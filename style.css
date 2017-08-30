@@ -1,0 +1,106 @@
+/*Set global defaults*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 60px 0px 0px 0px;
+  font-size: 1.5em;
+  line-height: 1.7em;
+  letter-spacing: 2px;
+  background-color: #EDF2F4;
+  color: #2B2D42;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+}
+
+h1,h2 {
+  margin: 0px;
+  padding: 0px;
+  font-weight: normal;
+}
+
+button {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit;
+  letter-spacing: inherit;
+}
+header h1 {
+  margin-bottom: 20px;
+}
+.hide {
+  display: none;
+}
+.bar {
+  width: 80vw;
+  height: auto;
+  margin: auto;
+  margin-top: 20vh;
+}
+.bar h1 {
+  min-height: 45px;
+  font-size: 2em;
+}
+.sub-bar {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+.btn { /*For all buttons*/
+  cursor: pointer;
+  height: auto;
+  width: 130px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+/*Tic tac toe board styles*/
+.container {
+  width: 60vmin;
+  height: 60vmin;
+  margin: auto;
+}
+.box {
+  width: 33.33%;
+  height: 33.33%;
+  float: left;
+  position: relative;
+}
+.box:hover{
+  cursor: pointer;
+  background-color: #D8DCDE;
+  background-color: hsla(0, 100%, 90%, 0.3);
+  background: radial-gradient(circle,#D8DCDE 0.05%,#EDF2F4 80%);
+  transition: background-color 0.4s ease;
+}
+h1.box-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-weight: normal;
+  font-size: 2.5em;
+}
+.br {
+  border-right: 2px #2B2D42 solid;
+  border-bottom: 2px #2B2D42 solid;
+}
+.r {
+  border-right: 2px #2B2D42 solid;
+}
+.b {
+  border-bottom: 2px #2B2D42 solid;
+}
+h1#result{
+  margin-top: 20px;
+}
+button#reset {
+  margin-top: 20px;
+  font-size: 1.5em;
+}
